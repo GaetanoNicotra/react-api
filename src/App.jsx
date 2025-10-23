@@ -34,13 +34,14 @@ function App() {
 
   return (
     <>
-      <header><h1> Cast Fetching</h1></header>
+      <header><h1 className='px-5'>Cast Fetching 🎬</h1></header>
       <div className="container">
         <div className="row g-3">
+          <h2>Attori</h2>
           {characters.map((character) => (
-            <div key={`character-${character.id}`} className="card col-2 h-100 me-4">
+            <div key={`character-${character.id}`} className="card col-lg-2 col-md-4 col-sm-3 me-4 mb-5">
               <img src={character.image} className="card-img-top" alt="..." />
-              <div className="card-body ">
+              <div className="card-body h-100">
                 <h5 className="card-title">{character.name}</h5>
                 <hr />
                 <p className="card-text"><strong>Biography</strong> <br />{character.biography}</p>
@@ -59,10 +60,11 @@ function App() {
               </ul>
             </div>
           ))}
+          <h2>Attrici</h2>
           {charactersBonus.map((characterB) => (
-            <div key={`characterB-${characterB.id}`} className="card col-2 h-100 me-4">
-              <img src={characterB.image} className="card-img-top" alt="..." />
-              <div className="card-body ">
+            <div key={`characterB-${characterB.id}`} className="card col-lg-2 col-md-4 col-sm-3 me-4 mb-5">
+              <img src={characterB.image} className="img-fluid" alt="..." />
+              <div className="card-body h-100">
                 <h5 className="card-title">{characterB.name}</h5>
                 <hr />
                 <p className="card-text"><strong>Biography</strong> <br />{characterB.biography}</p>

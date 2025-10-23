@@ -1,36 +1,48 @@
-# React + Vite
+# Cast Fetching - React + Vite App 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Questa applicazione React, creata con Vite, mostra un elenco di attori e attrici recuperati da API pubbliche.  
+L'obiettivo è esercitarsi con React, `useState`, `useEffect` e chiamate AJAX tramite Axios.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrizione del progetto
 
-## Expanding the ESLint configuration
+L’app carica due liste separate di personaggi (attori e attrici) da questi endpoint:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Attori: https://lanciweb.github.io/demo/api/actors/  
+- Attrici: https://lanciweb.github.io/demo/api/actresses/
 
+Per ogni personaggio viene mostrata una card con:
 
-Esercizio
-E’ arrivato il momento di mettere insieme i concetti appresi creiamo una piccola app che ci mostri un elenco di attori o attrici.
-Usate uno di questi due endpoint, a piacimento:
-Lista di Attrici: https://lanciweb.github.io/demo/api/actresses/
-Lista di Attori: https://lanciweb.github.io/demo/api/actors/
-MILESTONE 1
-Al caricamento dell'applicazione, recuperiamo la lista degli attori e delle attrici dalle API e stampiamoli in console.
-MILESTONE 2
-Prepariamo una card per ciascun attore/attrice, mostrandone le seguenti informazioni:
-nome
-anno nascita
-nazionalità
-biografia
-immagine
-riconoscimenti
-MILESTONE 3
-Mostriamo in pagina una card per ciascun attore, con grafica a piacimento!
-Numero minimo di push: 8
-BONUS 1 :rilassato:
-Stampare sia una lista delle attrici che degli attori, separatamente.
-BONUS 2 :occhiali_da_sole:
-Stampare un’unica lista che contiene attori e attrici insieme!
+- Nome  
+- Anno di nascita  
+- Nazionalità  
+- Biografia  
+- Immagine  
+- Riconoscimenti
+
+---
+
+## Tecnologie utilizzate
+
+- React 18  
+- Vite (bundler veloce)  
+- Axios (per chiamate HTTP)  
+- Bootstrap 5 (per styling base)
+
+---
+
+## Funzionalità / Milestone
+
+### Milestone 1  
+- Al caricamento dell’app, recupera la lista degli attori e delle attrici dalle API e stampale in console.
+
+### Milestone 2  
+- Mostra una card per ogni attore/attrice con le informazioni principali (nome, anno nascita, nazionalità, biografia, immagine, riconoscimenti).
+
+### Milestone 3  
+- Mostra graficamente le card separate per attori e attrici con una semplice grafica (usando Bootstrap).
+
+### Bonus  
+- Mostrare una lista unica contenente sia attori che attrici (non implementato nel codice fornito, ma possibile).
+
